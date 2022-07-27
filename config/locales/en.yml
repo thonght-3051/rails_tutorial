@@ -32,3 +32,25 @@
 en:
   hello: "Hello world"
   app_name: "Rails tutorials"
+  static_page:
+    sample_app: "Sample App"
+    home:
+      name: "Home"
+      title: "This is the home page for the"
+    help:
+      name: "Help"
+      head_title: "Get help on the sample app at the"
+      footer_title: "To get help on this sample app, see the"
+  sign_up:
+    name: "Sign up"
+    text: "This will be a signup page for new users."
+  about: "About"
+  contact: "Contact"
+  news: "News"
+  home: "Home"
+  help: "Help"
+  login: "Login"
+  text_contact_html: "Contact the Ruby on Rails Tutorial about the sample app at the"
+  contact_page: "Contact page"
+  by: "By"
+  here: "Here."

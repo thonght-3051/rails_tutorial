@@ -1,0 +1,14 @@
+<footer class="footer">
+  <small>
+    <%= link_to "Ruby on Rails", Settings.links.rails %>
+    <%= t "by" %>
+    <%= link_to "Michael Hartl", Settings.links.auth_rails %>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to t("about"), about_path %></li>
+      <li><%= link_to t("contact"), contact_path %></li>
+      <li><%= link_to t("news"), Settings.links.rails %></li>
+    </ul>
+  </nav>
+</footer>
