@@ -1,2 +1,24 @@
 vi:
   app_name: "Học ruby on rails"
+  static_page:
+    sample_app: "Ứng dụng mẫu"
+    home:
+      name: "Trang chủ"
+      title: "Đây là trang chủ của"
+    help:
+      name: "Giúp đỡ"
+      head_title: "Nhận trợ giúp về  ứng dụng mẫu tại"
+      footer_title: "Để nhận trợ giúp về  ứng dụng mẫu này, hãy xem"
+  sign_up:
+    name: "Đăng kí"
+    text: "Đây sẽ là trang đăng ký cho người dùng mới."
+  about: "Thông tin"
+  contact: "Liên lạc"
+  news: "Tin tức"
+  home: "Trang chủ"
+  help: "Giúp đỡ"
+  login: "Đăng nhập"
+  text_contact_html: "Liên hệ với Hướng dẫn Ruby on Rails về ứng dụng mẫu tại"
+  contact_page: "Trang liên lạc"
+  by: "Bởi"
+  here: "Đây."
