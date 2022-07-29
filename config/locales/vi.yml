@@ -22,3 +22,13 @@ vi:
   contact_page: "Trang liên lạc"
   by: "Bởi"
   here: "Đây."
+  name: "Tên"
+  email: "Email"
+  password: "Mật khẩu"
+  password_confirm: "Xác nhận mật khẩu"
+  create: "Tạo"
+  lang:
+    vi: "Tiếng việt"
+    en: "Tiếng anh"
+  welcome_app: "Chào mừng đến với ứng dụng mẫu!"
+  sign_up_failed: "Đăng kí thất bại!"

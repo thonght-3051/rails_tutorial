@@ -19,3 +19,4 @@ const:
     password:
       length:
         min: 6
+    gravatar_size: 80

@@ -54,3 +54,13 @@ en:
   contact_page: "Contact page"
   by: "By"
   here: "Here."
+  name: "Name"
+  email: "Email"
+  password: "Password"
+  password_confirm: "Password confirmation"
+  create: "Create"
+  lang:
+    vi: "Vietnamese"
+    en: "English"
+  welcome_app: "Welcome to the Sample App!"
+  sign_up_failed: "Signup failed!"
