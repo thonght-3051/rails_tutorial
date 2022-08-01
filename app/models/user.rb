@@ -6,7 +6,7 @@ class User < ApplicationRecord
   validates :name, presence: true,
     length: {
       minium: Settings.const.users.name.length.min,
-      maximum: Settings.const.users.name.length.min
+      maximum: Settings.const.users.name.length.max
     }
   validates :email, presence: true,
     length: {
@@ -19,6 +19,14 @@ class User < ApplicationRecord
   has_secure_password
   validates :password, presence: true,
     length: {minimum: Settings.const.users.password.length.min}
+
+  def self.digest string
+    min_cost = ActiveModel::SecurePassword.min_cost
+    cost = min_cost ? BCrypt::Engine::MIN_COST : BCrypt::Engine.cost
+    BCrypt::Password.create(string, cost: cost)
+  end
+
+  private
 
   def email_downcase
     email.downcase!
