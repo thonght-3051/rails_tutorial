@@ -25,4 +25,12 @@ class ApplicationController < ActionController::Base
   def template_not_found
     render file: Rails.root.to_s << ("/public/404.html")
   end
+
+  def logged_in_user
+    return if logged_in?
+
+    store_location
+    flash[:danger] = t "need_login"
+    redirect_to login_url
+  end
 end

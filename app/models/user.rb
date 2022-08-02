@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_many :microposts, dependent: :destroy
   attr_accessor :remember_token, :activation_token, :reset_token
 
   VALID_EMAIL_REGEX = Settings.const.users.email.regex.freeze
@@ -73,6 +74,10 @@ class User < ApplicationRecord
 
   def password_reset_expired?
     reset_sent_at < Settings.const.expired_link_reset_pass.hours.ago
+  end
+
+  def feed
+    microposts
   end
 
   private

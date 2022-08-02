@@ -22,3 +22,9 @@ const:
     gravatar_size: 80
   paginate: 10
   expired_link_reset_pass: 2
+  image_micropost_size: 50
+  image_size: 5
+  image_format: ["image/jpeg", "image/gif", "image/png"]
+  content_micropost: 140
+  resign_image: [500, 500]
+  image_format_view: "image/jpeg,image/gif,image/png"

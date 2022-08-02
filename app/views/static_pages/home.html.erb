@@ -1,11 +1,28 @@
-<div class="center jumbotron">
-  <%= provide :title, t("static_page.home.name") %>
-  <h1><%= t "static_page.sample_app" %></h1>
-  <p>
-    <%= t "static_page.home.title" %>
-    <%= link_to t("static_page.sample_app"), Settings.links.rails %>
-  </p>
-  <%= link_to t("sign_up.text"), signup_path, class: "btn btn-lg btn-primary" %>
-</div>
-<%= link_to image_tag("Ruby_on_Rails-Logo.wine.svg", alt: "Rails logo", id: "ruby_logo"), Settings.links.ruby_on_rails %>
-<%= image_tag("cat.jpeg") %>
+<%= provide :title, t("static_page.home.name") %>
+<% if logged_in? %>
+  <div class="row">
+    <aside class="col-md-4">
+      <section class="user_info">
+        <%= render "shared/user_info" %>
+      </section>
+      <section class="micropost_form">
+        <%= render "shared/micropost_form" %>
+      </section>
+    </aside>
+    <div class="col-md-8">
+      <h3><%= t "micropost.feed" %></h3>
+      <%= render "shared/feed" %>
+    </div>
+  </div>
+<% else %>
+  <div class="center jumbotron">
+    <h1><%= t "static_page.sample_app" %></h1>
+    <p>
+      <%= t "static_page.home.title" %>
+      <%= link_to t("static_page.sample_app"), Settings.links.rails %>
+    </p>
+    <%= link_to t("sign_up.text"), signup_path, class: "btn btn-lg btn-primary" %>
+  </div>
+  <%= link_to image_tag("Ruby_on_Rails-Logo.wine.svg", alt: "Rails logo", id: "ruby_logo"), Settings.links.ruby_on_rails %>
+  <%= image_tag("cat.jpeg") %>
+<% end %>

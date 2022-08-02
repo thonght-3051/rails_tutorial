@@ -73,3 +73,20 @@ vi:
   sent_pass_reset_success: "Mật khẩu đã được đặt lại. Vui lòng kiểm tra email"
   reset_pass_fail: "Đặt lại mật khẩu không thành công"
   forgot_password: "Quên mật khẩu"
+  micropost:
+    name: "Micropost"
+    created: "Đã tạo micropost!"
+    create_fail: "Không tạo được micropost!"
+    deleted: "Micropost đã bị xóa"
+    delete_fail: "Xóa không thành công"
+    validate:
+      image:
+        content_type: "Phải là định dạng hình ảnh hợp lệ"
+        size: "Phải nhỏ hơn 5MB"
+    posted: "Đã đăng"
+    ago: "Trước"
+    delete: "Xóa"
+    placeholder_create: "Soạn micropost mới..."
+    feed: "Danh sách micropost"
+  view_profile: "Xem hồ sơ của tôi"
+  alert_max_file_size: "File không được quá 5mb"

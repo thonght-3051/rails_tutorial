@@ -8,8 +8,12 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 import "bootstrap"
+import I18n from "i18n-js"
 
+window.I18n = I18n
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 require("jquery")
+
+require("./micropost")

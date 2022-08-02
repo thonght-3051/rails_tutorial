@@ -105,3 +105,20 @@ en:
   sent_pass_reset_success: "Password has been reset. Please check your email"
   reset_pass_fail: "Reset password fail"
   forgot_password: "Forget password"
+  micropost:
+    name: "Micropost"
+    created: "Micropost created!"
+    create_fail: "Micropost create failed!"
+    deleted: "Micropost deleted"
+    delete_fail: "Deleted fail"
+    validate:
+      image:
+        content_type: "Must be a valid image format"
+        size: "Should be less than 5MB"
+    posted: "Posted"
+    ago: "Ago"
+    delete: "Delete"
+    placeholder_create: "Compose new micropost..."
+    feed: "Micropost feed"
+  view_profile: "View my profile"
+  alert_max_file_size: "File should not be more than 5mb"
