@@ -43,7 +43,7 @@ class UsersController < ApplicationController
     if @user.destroy
       flash[:success] = t "success_deleted"
     else
-      flash[:success] = t "fail_delete"
+      flash[:danger] = t "fail_delete"
     end
 
     redirect_to users_url
@@ -54,7 +54,7 @@ class UsersController < ApplicationController
       :name, :email, :password, :password_confirmation
     )
   end
-  
+
   private
 
   def logged_in_user
