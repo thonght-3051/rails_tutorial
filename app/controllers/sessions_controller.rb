@@ -15,12 +15,21 @@ class SessionsController < ApplicationController
 
   def action_user_login user, remember
     if user&.authenticate(params[:session][:password])
+      verify_user user, remember
+    else
+      flash.now[:danger] = t "login_fail"
+      render :new
+    end
+  end
+
+  def verify_user user, remember
+    if user.activated?
       log_in user
       remember == "1" ? remember(user) : forget(user)
       redirect_to user
     else
-      flash.now[:danger] = t "login_fail"
-      render :new
+      flash[:warning] = t "account_not_active"
+      redirect_to root_url
     end
   end
 end
