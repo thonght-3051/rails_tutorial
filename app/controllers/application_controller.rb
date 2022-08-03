@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
   include SessionsHelper
+  include Pagy::Backend
 
   def set_locale
     locale = params[:locale].to_s.strip.to_sym
@@ -18,6 +19,10 @@ class ApplicationController < ActionController::Base
   def find_object model, id
     model.find(id)
   rescue StandardError
+    template_not_found
+  end
+
+  def template_not_found
     render file: Rails.root.to_s << ("/public/404.html")
   end
 end

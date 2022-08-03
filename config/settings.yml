@@ -20,3 +20,4 @@ const:
       length:
         min: 6
     gravatar_size: 80
+  paginate: 10
