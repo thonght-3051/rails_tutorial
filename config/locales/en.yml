@@ -122,3 +122,8 @@ en:
     feed: "Micropost feed"
   view_profile: "View my profile"
   alert_max_file_size: "File should not be more than 5mb"
+  following: "Following"
+  followers: "Followers"
+  follow: "Follow"
+  unfollow: "Unfollow"
+  post: "Post"

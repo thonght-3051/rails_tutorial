@@ -28,3 +28,4 @@ const:
   content_micropost: 140
   resign_image: [500, 500]
   image_format_view: "image/jpeg,image/gif,image/png"
+  image_stat: 30
