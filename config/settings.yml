@@ -21,3 +21,4 @@ const:
         min: 6
     gravatar_size: 80
   paginate: 10
+  expired_link_reset_pass: 2
