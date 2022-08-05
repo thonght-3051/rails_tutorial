@@ -8,7 +8,9 @@ class UsersController < ApplicationController
     @pagy, @users = pagy User.all, items: Settings.const.paginate
   end
 
-  def show; end
+  def show
+    @pagy, @microposts = pagy @user.microposts, items: Settings.const.paginate
+  end
 
   def new
     @user = User.new
